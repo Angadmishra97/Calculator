@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.display {
+    background: #333;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.prev-display {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.curr-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #ddd;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+button.operation {
+    background: #f5a623;
+    color: white;
+}
+
+button.operation:hover {
+    background: #e6951b;
+}
+
+button.equal {
+    background: #4caf50;
+    color: white;
+}
+
+button.equal:hover {
+    background: #45a045;
+}
